@@ -23,14 +23,14 @@ class AtmInterface implements Atm
         else
         {
             balance=balance-amount;
-            System.out.print("The amount $"+ amount +" has been withdrawn and The Balance is:" + balance);
+            System.out.print("The amount $ "+ amount + " has been withdrawn and The Balance is: " + balance);
         }
     }
     public void depositing(int amount)
     {
         int balance=Checkbalance();
         balance=balance+amount;
-        System.out.println("The amount $" + amount +"has been Deposited and The Balance is:" + balance);
+        System.out.println("The amount $ " + amount +" has been Deposited and The Balance is:" + balance);
     }
     public int Checkbalance(){
         return balance;
